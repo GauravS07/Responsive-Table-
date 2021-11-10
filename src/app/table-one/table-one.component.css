@@ -1,0 +1,55 @@
+.table-wrapper {
+    position: relative;
+    margin-bottom: 20px;
+    overflow: hidden;
+    padding-top: 10px;
+}
+.table-wrapper th, .table-wrapper td {
+    padding: 9px 10px;
+    border: 1px solid #ddd;
+  padding: 8px;
+}
+.table-wrapper .pinned {
+    display: none;
+}
+.table-wrapper .scrollable table {
+    width: 100%;
+}
+@media (max-width: 1100px) {
+    .table-wrapper {
+        border-right: 1px solid #ccc;
+   }
+    .table-wrapper .scrollable {
+        overflow: scroll;
+        overflow-y: hidden;
+   }
+    .table-wrapper .scrollable table {
+        margin-left: 20%;
+   }
+    .table-wrapper .scrollable table th, .table-wrapper .scrollable table td {
+        white-space: nowrap;
+        
+   }
+    .table-wrapper .scrollable table .hide-mobile {
+        display: none;
+  padding: 8px;
+   }
+    .table-wrapper .pinned {
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background: #fff;
+        width: 20%;
+        overflow: hidden;
+        overflow-x: scroll;
+        /* border-right: 1px solid #ccc;
+        border-left: 1px solid #ccc; */
+        padding-top: 10px;
+   }
+    .table-wrapper .pinned table {
+        border-right: none;
+        border-left: none;
+        width: 100%;
+   }
+}
