@@ -14,6 +14,7 @@
  body {
 	 padding: 0.2em 2em;
 }
+
  table {
 	 width: 100%;
 }
@@ -23,6 +24,7 @@
 }
  table th, table td {
 	 padding: 0.4em;
+	 width: 14%;
 }
  table.fold-table > tbody > tr.view td, table.fold-table > tbody > tr.view th {
 	 cursor: pointer;
@@ -47,7 +49,7 @@
 	 background: #eee;
 }
  table.fold-table > tbody > tr.view:hover {
-	 background: #000;
+	 background: rgb(162, 221, 255);
 }
  table.fold-table > tbody > tr.view.open {
 	 background: tomato;
